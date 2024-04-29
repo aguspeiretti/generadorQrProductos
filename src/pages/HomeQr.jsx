@@ -128,7 +128,7 @@ const HomeQr = ({ computers, phone, monitor }) => {
 
                       {/* Genera el código QR para el número de serie */}
                       <QRCode
-                        value={`http://localhost:5173/info/${item.serial}`}
+                        value={`https://qragus.netlify.app/info/${item.serial}`}
                       />
                     </div>
                   ))
@@ -141,7 +141,7 @@ const HomeQr = ({ computers, phone, monitor }) => {
 
                       {/* Genera el código QR para el número de serie */}
                       <QRCode
-                        value={`http://localhost:5173/info/${item.serial}`}
+                        value={`https://qragus.netlify.app/info/${item.serial}`}
                       />
                     </div>
                   ))
@@ -165,7 +165,7 @@ const HomeQr = ({ computers, phone, monitor }) => {
 
                       {/* Genera el código QR para el número de serie */}
                       <QRCode
-                        value={`http://localhost:5173/info/${item.serial}`}
+                        value={`https://qragus.netlify.app/info/${item.serial}`}
                       />
                     </div>
                   ))
@@ -178,7 +178,7 @@ const HomeQr = ({ computers, phone, monitor }) => {
 
                       {/* Genera el código QR para el número de serie */}
                       <QRCode
-                        value={`http://localhost:5173/info/${item.serial}`}
+                        value={`https://qragus.netlify.app/info/${item.serial}`}
                       />
                     </div>
                   ))
@@ -191,7 +191,7 @@ const HomeQr = ({ computers, phone, monitor }) => {
 
                       {/* Genera el código QR para el número de serie */}
                       <QRCode
-                        value={`http://localhost:5173/info/${item.serial}`}
+                        value={`https://qragus.netlify.app/info/${item.serial}`}
                       />
                     </div>
                   ))
@@ -204,7 +204,7 @@ const HomeQr = ({ computers, phone, monitor }) => {
 
                       {/* Genera el código QR para el número de serie */}
                       <QRCode
-                        value={`http://localhost:5173/info/${item.serial}`}
+                        value={`https://qragus.netlify.app/info/${item.serial}`}
                       />
                     </div>
                   ))
@@ -240,7 +240,7 @@ const HomeQr = ({ computers, phone, monitor }) => {
 
                       {/* Genera el código QR para el número de serie */}
                       <QRCode
-                        value={`https://tudominio.com/product-details?serial=${item.serial}`}
+                        value={`https://qragus.netlify.app/info/${item.serial}`}
                       />
                     </div>
                   ))
@@ -253,7 +253,7 @@ const HomeQr = ({ computers, phone, monitor }) => {
 
                       {/* Genera el código QR para el número de serie */}
                       <QRCode
-                        value={`https://tudominio.com/product-details?serial=${item.serial}`}
+                        value={`https://qragus.netlify.app/info/${item.serial}`}
                       />
                     </div>
                   ))
@@ -266,7 +266,7 @@ const HomeQr = ({ computers, phone, monitor }) => {
 
                       {/* Genera el código QR para el número de serie */}
                       <QRCode
-                        value={`https://tudominio.com/product-details?serial=${item.serial}`}
+                        value={`https://qragus.netlify.app/info/${item.serial}`}
                       />
                     </div>
                   ))
@@ -290,7 +290,7 @@ const HomeQr = ({ computers, phone, monitor }) => {
 
                       {/* Genera el código QR para el número de serie */}
                       <QRCode
-                        value={`https://tudominio.com/product-details?serial=${item.serial}`}
+                        value={`https://qragus.netlify.app/info/${item.serial}`}
                       />
                     </div>
                   ))
@@ -314,7 +314,7 @@ const HomeQr = ({ computers, phone, monitor }) => {
 
                       {/* Genera el código QR para el número de serie */}
                       <QRCode
-                        value={`https://tudominio.com/product-details?serial=${item.serial}`}
+                        value={`https://qragus.netlify.app/info/${item.serial}`}
                       />
                     </div>
                   ))
@@ -361,7 +361,7 @@ const HomeQr = ({ computers, phone, monitor }) => {
 
                       {/* Genera el código QR para el número de serie */}
                       <QRCode
-                        value={`https://tudominio.com/product-details?serial=${item.serial}`}
+                        value={`https://qragus.netlify.app/info/${item.serial}`}
                       />
                     </div>
                   ))
@@ -374,7 +374,7 @@ const HomeQr = ({ computers, phone, monitor }) => {
 
                       {/* Genera el código QR para el número de serie */}
                       <QRCode
-                        value={`https://tudominio.com/product-details?serial=${item.serial}`}
+                        value={`https://qragus.netlify.app/info/${item.serial}`}
                       />
                     </div>
                   ))
@@ -387,7 +387,7 @@ const HomeQr = ({ computers, phone, monitor }) => {
 
                       {/* Genera el código QR para el número de serie */}
                       <QRCode
-                        value={`https://tudominio.com/product-details?serial=${item.serial}`}
+                        value={`https://qragus.netlify.app/info/${item.serial}`}
                       />
                     </div>
                   ))
@@ -400,7 +400,7 @@ const HomeQr = ({ computers, phone, monitor }) => {
 
                       {/* Genera el código QR para el número de serie */}
                       <QRCode
-                        value={`https://tudominio.com/product-details?serial=${item.serial}`}
+                        value={`hhttps://qragus.netlify.app/info/${item.serial}`}
                       />
                     </div>
                   ))
@@ -413,7 +413,7 @@ const HomeQr = ({ computers, phone, monitor }) => {
 
                       {/* Genera el código QR para el número de serie */}
                       <QRCode
-                        value={`https://tudominio.com/product-details?serial=${item.serial}`}
+                        value={`https://qragus.netlify.app/info/${item.serial}`}
                       />
                     </div>
                   ))
@@ -426,7 +426,7 @@ const HomeQr = ({ computers, phone, monitor }) => {
 
                       {/* Genera el código QR para el número de serie */}
                       <QRCode
-                        value={`https://tudominio.com/product-details?serial=${item.serial}`}
+                        value={`https://qragus.netlify.app/info/${item.serial}`}
                       />
                     </div>
                   ))
