@@ -10,7 +10,7 @@
   overflow: auto;
   border: 2px solid white;
   width: 400px;
-  height: 100vh;
+  height: 450px;
   color: rgb(0, 0, 0);
   text-align: start;
   border-radius: 15px;
@@ -39,4 +39,18 @@
 }
 .espera {
   color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    overflow: auto;
+    border: 2px solid white;
+    width: 100vw;
+    height: 100vh;
+    color: rgb(0, 0, 0);
+    text-align: start;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+  }
 }
