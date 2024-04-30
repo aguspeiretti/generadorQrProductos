@@ -154,7 +154,7 @@ const Info = () => {
             </p>
           </div>
         ) : (
-          <p>Esperando datos...</p>
+          <p className="espera">Esperando datos...</p>
         )}
       </div>
     </div>
