@@ -87,6 +87,7 @@ const HomeQr = ({ computers, phone, monitor }) => {
         <ul>
           <img src={logo} alt="" />
           <li
+            className={activos === "computadoras" ? "select" : null}
             onClick={() => {
               setActivos("computadoras");
             }}
@@ -94,6 +95,7 @@ const HomeQr = ({ computers, phone, monitor }) => {
             Computadoras
           </li>
           <li
+            className={activos === "telefonos" ? "select" : null}
             onClick={() => {
               setActivos("telefonos");
             }}
@@ -101,6 +103,7 @@ const HomeQr = ({ computers, phone, monitor }) => {
             Telefonos
           </li>
           <li
+            className={activos === "monitores" ? "select" : null}
             onClick={() => {
               setActivos("monitores");
             }}
@@ -118,17 +121,50 @@ const HomeQr = ({ computers, phone, monitor }) => {
             <div className="titular">
               <h1>Computadoras</h1>
               <ul>
-                <li onClick={() => setArea("Marketing")}>Marketing</li>
-                <li onClick={() => setArea("Coordinacion")}>Coordinacion</li>
-                <li onClick={() => setArea("Auxiliar Coordinación")}>
+                <li
+                  className={area === "Marketing" ? "selecteda" : null}
+                  onClick={() => setArea("Marketing")}
+                >
+                  Marketing
+                </li>
+                <li
+                  className={area === "Coordinacion" ? "selected" : null}
+                  onClick={() => setArea("Coordinacion")}
+                >
+                  Coordinacion
+                </li>
+                <li
+                  className={
+                    area === "Auxiliar Coordinación" ? "selected" : null
+                  }
+                  onClick={() => setArea("Auxiliar Coordinación")}
+                >
                   Auxiliar Coordinación
                 </li>
-                <li onClick={() => setArea("Contabilidad")}>Contabilidad</li>
-                <li onClick={() => setArea("Recursos Humanos")}>
+                <li
+                  className={area === "Contabilidad" ? "selected" : null}
+                  onClick={() => setArea("Contabilidad")}
+                >
+                  Contabilidad
+                </li>
+                <li
+                  className={area === "Recursos Humanos" ? "selected" : null}
+                  onClick={() => setArea("Recursos Humanos")}
+                >
                   Recursos Humanos
                 </li>
-                <li onClick={() => setArea("Ventas")}>Ventas</li>
-                <li onClick={() => setArea("Gestión")}>Gestión</li>
+                <li
+                  className={area === "Ventas" ? "selected" : null}
+                  onClick={() => setArea("Ventas")}
+                >
+                  Ventas
+                </li>
+                <li
+                  className={area === "Gestión" ? "selected" : null}
+                  onClick={() => setArea("Gestión")}
+                >
+                  Gestión
+                </li>
               </ul>
             </div>
             {/* Renderiza los activos y genera un código QR para cada número de serie */}

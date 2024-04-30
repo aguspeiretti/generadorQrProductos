@@ -125,3 +125,15 @@ ul {
   padding: 0 100px;
   margin-top: 20px;
 }
+.select {
+  border: 1px solid rgb(253, 138, 6) !important;
+  color: rgb(253, 138, 6);
+}
+.selected {
+  border: 1px solid rgb(253, 138, 6) !important;
+  color: rgb(253, 138, 6);
+}
+.selecteda {
+  border: 1px solid rgb(253, 138, 6) !important;
+  color: rgb(253, 138, 6);
+}
