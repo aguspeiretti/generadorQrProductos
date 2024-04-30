@@ -12,7 +12,7 @@ const Info = () => {
   useEffect(() => {
     const apiUrl =
       "https://mundojob.with23.glpi-network.cloud/apirest.php/initSession/";
-    const appToken = "PFV2LtTC7Qe6EtekLa0VeGa1DZys24C4iaHJsgEE";
+    const appToken = import.meta.env.VITE_REACT_APP_API_TOKEN;
 
     // Define las credenciales de autenticación (reemplaza con tus propias credenciales)
     const login = "admin";
@@ -58,7 +58,7 @@ const Info = () => {
             "Content-Type": "application/json",
             "Session-Token": sessionToken,
             // Reemplaza "TU_TOKEN_DE_AUTORIZACIÓN_AQUÍ" con tu token de autorización válido
-            "App-Token": "PFV2LtTC7Qe6EtekLa0VeGa1DZys24C4iaHJsgEE",
+            "App-Token": import.meta.env.VITE_REACT_APP_API_TOKEN,
           },
         }
       );
@@ -80,7 +80,7 @@ const Info = () => {
             "Content-Type": "application/json",
             "Session-Token": sessionToken,
             // Reemplaza "TU_TOKEN_DE_AUTORIZACIÓN_AQUÍ" con tu token de autorización válido
-            "App-Token": "PFV2LtTC7Qe6EtekLa0VeGa1DZys24C4iaHJsgEE",
+            "App-Token": import.meta.env.VITE_REACT_APP_API_TOKEN,
           },
         }
       );
@@ -102,7 +102,7 @@ const Info = () => {
             "Content-Type": "application/json",
             "Session-Token": sessionToken,
             // Reemplaza "TU_TOKEN_DE_AUTORIZACIÓN_AQUÍ" con tu token de autorización válido
-            "App-Token": "PFV2LtTC7Qe6EtekLa0VeGa1DZys24C4iaHJsgEE",
+            "App-Token": import.meta.env.VITE_REACT_APP_API_TOKEN,
           },
         }
       );
