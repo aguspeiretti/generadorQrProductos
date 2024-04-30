@@ -1,6 +1,7 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import "./products.css";
 
 const Info = () => {
@@ -132,21 +133,28 @@ const Info = () => {
             <p>
               <strong>Número de Serie:</strong> {product.serial}
             </p>
-            <p>
-              <strong>ID usuario:</strong> {product.users_id}
-            </p>
-            <p>
-              <strong>Grupo:</strong> {product.groups_id}
+
+            <p className="g">
+              <strong>Grupo:</strong> <p>{product.groups_id}</p>
             </p>
             <p>
               <strong>Ubicación:</strong> {product.locations_id}
             </p>
+            <p className="g">
+              <strong>ID Usuario:</strong> <p>{product.users_id}</p>
+            </p>
             <p>
-              <strong>ID del producto:</strong> {product.id}
+              <strong>Nombre:</strong> {product.name}
+            </p>
+            <p>
+              <strong>modelo:</strong> {product.computermodels_id}
+            </p>
+            <p>
+              <strong>comentarios:</strong> {product.comment}
             </p>
           </div>
         ) : (
-          <p>Producto no encontrado</p>
+          <p>Esperando datos...</p>
         )}
       </div>
     </div>

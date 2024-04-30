@@ -4,6 +4,7 @@ import { useState } from "react";
 import QRCode from "qrcode.react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import logo from "../assets/logo.png";
 
 const HomeQr = ({ computers, phone, monitor }) => {
   console.log("home", computers);
@@ -15,6 +16,12 @@ const HomeQr = ({ computers, phone, monitor }) => {
     setActivos("computadoras");
     setArea("Marketing");
   }, []);
+
+  const ubicacionCompus = computers.filter(
+    (compu) => compu.locations_id === "Ciudad de México"
+  );
+
+  console.log("cordoba", ubicacionCompus);
 
   //filtros computadoras
 
@@ -78,6 +85,7 @@ const HomeQr = ({ computers, phone, monitor }) => {
     <div className="App">
       <div className="nav">
         <ul>
+          <img src={logo} alt="" />
           <li
             onClick={() => {
               setActivos("computadoras");
@@ -131,6 +139,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
                       </div>
+                      <div className="usuario">
+                        <strong>Usuario:</strong> <p>{item.users_id}</p>
+                      </div>
 
                       {/* Genera el código QR para el número de serie */}
                       <QRCode
@@ -143,6 +154,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                     <div className="qrItem" key={item.id}>
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
+                      </div>
+                      <div className="usuario">
+                        <strong>Usuario:</strong> <p>{item.users_id}</p>
                       </div>
 
                       {/* Genera el código QR para el número de serie */}
@@ -157,6 +171,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
                       </div>
+                      <div className="usuario">
+                        <strong>Usuario:</strong> <p>{item.users_id}</p>
+                      </div>
 
                       {/* Genera el código QR para el número de serie */}
                       <QRCode value={item.serial} />
@@ -167,6 +184,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                     <div className="qrItem" key={item.id}>
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
+                      </div>
+                      <div className="usuario">
+                        <strong>Usuario:</strong> <p>{item.users_id}</p>
                       </div>
 
                       {/* Genera el código QR para el número de serie */}
@@ -181,6 +201,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
                       </div>
+                      <div className="usuario">
+                        <strong>Usuario:</strong> <p>{item.users_id}</p>
+                      </div>
 
                       {/* Genera el código QR para el número de serie */}
                       <QRCode
@@ -194,6 +217,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
                       </div>
+                      <div className="usuario">
+                        <strong>Usuario:</strong> <p>{item.users_id}</p>
+                      </div>
 
                       {/* Genera el código QR para el número de serie */}
                       <QRCode
@@ -206,6 +232,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                     <div className="qrItem" key={item.id}>
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
+                      </div>
+                      <div className="usuario">
+                        <strong>Usuario:</strong> <p>{item.users_id}</p>
                       </div>
 
                       {/* Genera el código QR para el número de serie */}
@@ -243,6 +272,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
                       </div>
+                      <div className="usuario">
+                        <strong>Usuario:</strong> <p>{item.users_id}</p>
+                      </div>
 
                       {/* Genera el código QR para el número de serie */}
                       <QRCode
@@ -255,6 +287,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                     <div className="qrItem" key={item.id}>
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
+                      </div>
+                      <div className="usuario">
+                        <strong>Usuario:</strong> <p>{item.users_id}</p>
                       </div>
 
                       {/* Genera el código QR para el número de serie */}
@@ -269,6 +304,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
                       </div>
+                      <div className="usuario">
+                        <strong>Usuario:</strong> <p>{item.users_id}</p>
+                      </div>
 
                       {/* Genera el código QR para el número de serie */}
                       <QRCode
@@ -282,6 +320,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
                       </div>
+                      <div className="usuario">
+                        <strong>Usuario:</strong> <p>{item.users_id}</p>
+                      </div>
 
                       {/* Genera el código QR para el número de serie */}
                       <QRCode value={item.serial} />
@@ -292,6 +333,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                     <div className="qrItem" key={item.id}>
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
+                      </div>
+                      <div className="usuario">
+                        <strong>Usuario:</strong> <p>{item.users_id}</p>
                       </div>
 
                       {/* Genera el código QR para el número de serie */}
@@ -306,6 +350,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
                       </div>
+                      <div className="usuario">
+                        <strong>Usuario:</strong> <p>{item.users_id}</p>
+                      </div>
 
                       {/* Genera el código QR para el número de serie */}
                       <QRCode value={item.serial} />
@@ -316,6 +363,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                     <div className="qrItem" key={item.id}>
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
+                      </div>
+                      <div className="usuario">
+                        <strong>Usuario:</strong> <p>{item.users_id}</p>
                       </div>
 
                       {/* Genera el código QR para el número de serie */}
@@ -353,6 +403,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
                       </div>
+                      <div className="usuario">
+                        <strong>Usuario:</strong> <p>{item.users_id}</p>
+                      </div>
 
                       {/* Genera el código QR para el número de serie */}
                       <QRCode value={item.serial} />
@@ -363,6 +416,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                     <div className="qrItem" key={item.id}>
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
+                      </div>
+                      <div className="usuario">
+                        <strong>Usuario:</strong> <p>{item.users_id}</p>
                       </div>
 
                       {/* Genera el código QR para el número de serie */}
@@ -377,6 +433,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
                       </div>
+                      <div className="usuario">
+                        <strong>Usuario:</strong> <p>{item.users_id}</p>
+                      </div>
 
                       {/* Genera el código QR para el número de serie */}
                       <QRCode
@@ -389,6 +448,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                     <div className="qrItem" key={item.id}>
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
+                      </div>
+                      <div className="usuario">
+                        <strong>Usuario:</strong> <p>{item.users_id}</p>
                       </div>
 
                       {/* Genera el código QR para el número de serie */}
@@ -403,6 +465,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
                       </div>
+                      <div className="usuario">
+                        <strong>Usuario:</strong> <p>{item.users_id}</p>
+                      </div>
 
                       {/* Genera el código QR para el número de serie */}
                       <QRCode
@@ -416,6 +481,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
                       </div>
+                      <div className="usuario">
+                        <strong>Usuario:</strong> <p>{item.users_id}</p>
+                      </div>
 
                       {/* Genera el código QR para el número de serie */}
                       <QRCode
@@ -428,6 +496,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                     <div className="qrItem" key={item.id}>
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
+                      </div>
+                      <div className="usuario">
+                        <strong>Usuario:</strong> <p>{item.users_id}</p>
                       </div>
 
                       {/* Genera el código QR para el número de serie */}

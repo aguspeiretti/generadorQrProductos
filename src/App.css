@@ -26,13 +26,18 @@
 }
 .qrItem {
   width: 200px;
+  height: 270px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid black;
+  justify-content: space-between;
+  /* border: 1px solid black; */
   padding: 30px 5px;
   margin: 10px;
   border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 26px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 26px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 26px -9px rgba(0, 0, 0, 0.75);
 }
 .btn {
   margin-bottom: 15px;
@@ -43,7 +48,7 @@ ul {
     list-style: none;
     font-family: sans-serif;
     margin-right: 15px;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     padding: 10px;
     border-radius: 7px;
     cursor: pointer;
@@ -93,6 +98,8 @@ ul {
   align-items: center;
   width: 100%;
   justify-content: space-evenly;
+  background-color: rgb(20, 20, 20);
+  color: white;
 }
 .titular h1 {
   height: 100%;
@@ -100,4 +107,21 @@ ul {
   justify-content: center;
   align-items: center;
   margin-top: 15px;
+}
+.nav ul img {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+.usuario {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.usuario p {
+  font-weight: bold;
+  color: rgb(253, 138, 6);
+}
+.computers {
+  padding: 0 100px;
+  margin-top: 20px;
 }

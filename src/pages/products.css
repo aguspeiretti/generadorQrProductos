@@ -7,13 +7,14 @@
   align-items: center;
 }
 .card {
+  overflow: auto;
   border: 2px solid white;
   width: 400px;
-  height: 400px;
-  color: white;
+  height: 100vh;
+  color: rgb(0, 0, 0);
   text-align: start;
   border-radius: 15px;
-  background-color: rgba(250, 235, 215, 0.158);
+  background-color: rgb(255, 255, 255);
   padding: 20px;
   h2 {
     font-size: 30px;
@@ -22,4 +23,17 @@
     margin-top: 15px;
     font-size: 20px;
   }
+}
+.g strong {
+  color: rgb(253, 138, 6);
+}
+.g p {
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  margin-left: 5px;
+}
+.g {
+  display: flex;
+  align-items: center;
 }
