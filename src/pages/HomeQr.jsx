@@ -3,12 +3,18 @@
 import { useState } from "react";
 import QRCode from "qrcode.react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 const HomeQr = ({ computers, phone, monitor }) => {
   console.log("home", computers);
-  const [area, setArea] = useState("");
-  const [activos, setActivos] = useState("");
+  const [area, setArea] = useState("Marketing");
+  const [activos, setActivos] = useState("computadoras");
   // const [selectedProduct, setSelectedProduct] = useState(null);
+
+  useEffect(() => {
+    setActivos("computadoras");
+    setArea("Marketing");
+  }, []);
 
   //filtros computadoras
 

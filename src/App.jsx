@@ -5,6 +5,7 @@ import HomeQr from "./pages/HomeQr";
 import { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Info from "./pages/Info";
+import Loader from "./loader/Loader";
 
 const App = () => {
   const [computers, setComputers] = useState([]);
@@ -134,7 +135,9 @@ const App = () => {
       />
     </Routes>
   ) : (
-    <p>Cargando...</p>
+    <p>
+      <Loader />
+    </p>
   );
 };
 
