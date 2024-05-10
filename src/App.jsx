@@ -16,7 +16,7 @@ const App = () => {
     const apiUrl =
       "https://mundojob.with23.glpi-network.cloud/apirest.php/initSession/";
     const appToken = import.meta.env.VITE_REACT_APP_API_TOKEN;
-    console.log("token", appToken);
+    // console.log("token", appToken);
 
     // Define las credenciales de autenticación (reemplaza con tus propias credenciales)
     const login = "admin";
