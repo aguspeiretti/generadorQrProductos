@@ -548,28 +548,6 @@ const HomeQr = ({ computers, phone, monitor }) => {
           </div>
         ) : null}
       </div>
-
-      {/* Página de detalles del producto */}
-      {/* {selectedProduct && (
-        <div className="product-details">
-          <h2>Detalles del Producto</h2>
-          <p>
-            <strong>Número de Serie:</strong> {selectedProduct.serial}
-          </p>
-          <p>
-            <strong>ID usuario:</strong> {selectedProduct.users_id}
-          </p>
-          <p>
-            <strong>grupo:</strong> {selectedProduct.groups_id}
-          </p>
-          <p>
-            <strong>Ubicacion:</strong> {selectedProduct.locations_id}
-          </p>
-          <p>
-            <strong>id producto:</strong> {selectedProduct.id}
-          </p>
-        </div>
-      )} */}
     </div>
   );
 };

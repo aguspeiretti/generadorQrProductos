@@ -9,6 +9,7 @@ const Info = () => {
   const [phone, setPhone] = useState([]);
   const [monitor, setMonitor] = useState([]);
   const [sessionToken, setSessionToken] = useState("");
+
   useEffect(() => {
     const apiUrl =
       "https://mundojob.with23.glpi-network.cloud/apirest.php/initSession/";
@@ -117,7 +118,6 @@ const Info = () => {
 
   // Extrae el número de serie de la URL
   let { serial } = useParams();
-  console.log(serial);
 
   // Encuentra el producto correspondiente al número de serie
   const product = computers
