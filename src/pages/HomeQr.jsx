@@ -507,7 +507,7 @@ const HomeQr = ({ computers, phone, monitor }) => {
 
                       {/* Genera el código QR para el número de serie */}
                       <QRCode
-                        value={`hhttps://qragus.netlify.app/info/${item.serial}`}
+                        value={`https://qragus.netlify.app/info/${item.serial}`}
                       />
                     </div>
                   ))
