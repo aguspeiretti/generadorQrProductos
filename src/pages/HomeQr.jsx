@@ -172,6 +172,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
               {area === "Marketing"
                 ? compuMkt.map((item) => (
                     <div className="qrItem" key={item.id}>
+                      <div className="inventario">
+                        <strong>Inventario:</strong> <p>{item.otherserial}</p>
+                      </div>
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
                       </div>
@@ -188,6 +191,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                 : area === "Coordinacion"
                 ? compuCoord.map((item) => (
                     <div className="qrItem" key={item.id}>
+                      <div className="inventario">
+                        <strong>Inventario:</strong> <p>{item.otherserial}</p>
+                      </div>
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
                       </div>
@@ -204,6 +210,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                 : area === "Auxiliar Coordinación"
                 ? compuAux.map((item) => (
                     <div className="qrItem" key={item.id}>
+                      <div className="inventario">
+                        <strong>Inventario:</strong> <p>{item.otherserial}</p>
+                      </div>
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
                       </div>
@@ -218,6 +227,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                 : area === "Contabilidad"
                 ? compuConta.map((item) => (
                     <div className="qrItem" key={item.id}>
+                      <div className="inventario">
+                        <strong>Inventario:</strong> <p>{item.otherserial}</p>
+                      </div>
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
                       </div>
@@ -234,6 +246,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                 : area === "Recursos Humanos"
                 ? compuRH.map((item) => (
                     <div className="qrItem" key={item.id}>
+                      <div className="inventario">
+                        <strong>Inventario:</strong> <p>{item.otherserial}</p>
+                      </div>
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
                       </div>
@@ -250,6 +265,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                 : area === "Ventas"
                 ? compuVentas.map((item) => (
                     <div className="qrItem" key={item.id}>
+                      <div className="inventario">
+                        <strong>Inventario:</strong> <p>{item.otherserial}</p>
+                      </div>
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
                       </div>
@@ -266,6 +284,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                 : area === "Gestión"
                 ? compuGestion.map((item) => (
                     <div className="qrItem" key={item.id}>
+                      <div className="inventario">
+                        <strong>Inventario:</strong> <p>{item.otherserial}</p>
+                      </div>
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
                       </div>
@@ -305,6 +326,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
               {area === "Marketing"
                 ? telefMkt.map((item) => (
                     <div className="qrItem" key={item.id}>
+                      <div className="inventario">
+                        <strong>Inventario:</strong> <p>{item.otherserial}</p>
+                      </div>
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
                       </div>
@@ -321,6 +345,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                 : area === "Coordinacion"
                 ? telefCoord.map((item) => (
                     <div className="qrItem" key={item.id}>
+                      <div className="inventario">
+                        <strong>Inventario:</strong> <p>{item.otherserial}</p>
+                      </div>
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
                       </div>
@@ -337,6 +364,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                 : area === "Auxiliar Coordinación"
                 ? telefAux.map((item) => (
                     <div className="qrItem" key={item.id}>
+                      <div className="inventario">
+                        <strong>Inventario:</strong> <p>{item.otherserial}</p>
+                      </div>
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
                       </div>
@@ -353,6 +383,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                 : area === "Contabilidad"
                 ? telefConta.map((item) => (
                     <div className="qrItem" key={item.id}>
+                      <div className="inventario">
+                        <strong>Inventario:</strong> <p>{item.otherserial}</p>
+                      </div>
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
                       </div>
@@ -367,6 +400,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                 : area === "Recursos Humanos"
                 ? telefRH.map((item) => (
                     <div className="qrItem" key={item.id}>
+                      <div className="inventario">
+                        <strong>Inventario:</strong> <p>{item.otherserial}</p>
+                      </div>
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
                       </div>
@@ -383,6 +419,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                 : area === "Ventas"
                 ? telefVentas.map((item) => (
                     <div className="qrItem" key={item.id}>
+                      <div className="inventario">
+                        <strong>Inventario:</strong> <p>{item.otherserial}</p>
+                      </div>
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
                       </div>
@@ -397,6 +436,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                 : area === "Gestión"
                 ? telefGestion.map((item) => (
                     <div className="qrItem" key={item.id}>
+                      <div className="inventario">
+                        <strong>Inventario:</strong> <p>{item.otherserial}</p>
+                      </div>
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
                       </div>
@@ -436,6 +478,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
               {area === "Marketing"
                 ? monitfMkt.map((item) => (
                     <div className="qrItem" key={item.id}>
+                      <div className="inventario">
+                        <strong>Inventario:</strong> <p>{item.otherserial}</p>
+                      </div>
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
                       </div>
@@ -450,6 +495,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                 : area === "Coordinacion"
                 ? monitfCoord.map((item) => (
                     <div className="qrItem" key={item.id}>
+                      <div className="inventario">
+                        <strong>Inventario:</strong> <p>{item.otherserial}</p>
+                      </div>
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
                       </div>
@@ -466,6 +514,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                 : area === "Auxiliar Coordinación"
                 ? monitfAux.map((item) => (
                     <div className="qrItem" key={item.id}>
+                      <div className="inventario">
+                        <strong>Inventario:</strong> <p>{item.otherserial}</p>
+                      </div>
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
                       </div>
@@ -482,6 +533,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                 : area === "Contabilidad"
                 ? monitfConta.map((item) => (
                     <div className="qrItem" key={item.id}>
+                      <div className="inventario">
+                        <strong>Inventario:</strong> <p>{item.otherserial}</p>
+                      </div>
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
                       </div>
@@ -498,6 +552,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                 : area === "Recursos Humanos"
                 ? monitfRH.map((item) => (
                     <div className="qrItem" key={item.id}>
+                      <div className="inventario">
+                        <strong>Inventario:</strong> <p>{item.otherserial}</p>
+                      </div>
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
                       </div>
@@ -514,6 +571,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                 : area === "Ventas"
                 ? monitfVentas.map((item) => (
                     <div className="qrItem" key={item.id}>
+                      <div className="inventario">
+                        <strong>Inventario:</strong> <p>{item.otherserial}</p>
+                      </div>
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
                       </div>
@@ -530,6 +590,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                 : area === "Gestión"
                 ? monitfGestion.map((item) => (
                     <div className="qrItem" key={item.id}>
+                      <div className="inventario">
+                        <strong>Inventario:</strong> <p>{item.otherserial}</p>
+                      </div>
                       <div>
                         <strong>Número de Serie:</strong> <p>{item.serial}</p>
                       </div>

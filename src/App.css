@@ -140,3 +140,7 @@ ul {
   border: 1px solid rgb(253, 138, 6) !important;
   color: rgb(253, 138, 6);
 }
+.inventario {
+  display: flex;
+  margin-bottom: 10px;
+}
