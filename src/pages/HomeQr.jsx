@@ -221,7 +221,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                       </div>
 
                       {/* Genera el código QR para el número de serie */}
-                      <QRCode value={item.serial} />
+                      <QRCode
+                        value={`https://qragus.netlify.app/info/${item.serial}`}
+                      />
                     </div>
                   ))
                 : area === "Contabilidad"
@@ -394,7 +396,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                       </div>
 
                       {/* Genera el código QR para el número de serie */}
-                      <QRCode value={item.serial} />
+                      <QRCode
+                        value={`https://qragus.netlify.app/info/${item.serial}`}
+                      />
                     </div>
                   ))
                 : area === "Recursos Humanos"
@@ -430,7 +434,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                       </div>
 
                       {/* Genera el código QR para el número de serie */}
-                      <QRCode value={item.serial} />
+                      <QRCode
+                        value={`https://qragus.netlify.app/info/${item.serial}`}
+                      />
                     </div>
                   ))
                 : area === "Gestión"
