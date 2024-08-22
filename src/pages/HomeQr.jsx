@@ -20,6 +20,7 @@ const HomeQr = ({ computers, phone, monitor }) => {
   const ubicacionCompus = computers.filter(
     (compu) => compu.locations_id === "Ciudad de México"
   );
+  console.log(area);
 
   console.log("cordoba", ubicacionCompus);
 
@@ -48,6 +49,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
   const teleComunicacion = phone.filter(
     (compu) => compu.groups_id === "Comunicación Institucional"
   );
+
+  console.log(teleComunicacion);
+
   const telefVentas = phone.filter((compu) => compu.groups_id === "Ventas");
   const telefMkt = phone.filter((compu) => compu.groups_id === "Marketing");
   const telefGestion = phone.filter((compu) => compu.groups_id === "Gestión");
@@ -172,9 +176,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                   className={
                     area === "Comunicación Institucional" ? "selected" : null
                   }
-                  onClick={() => setArea("Comunicación Institucional")}
+                  onClick={() => setArea("Comunicacion Institucional")}
                 >
-                  Gestión
+                  Comunicacion
                 </li>
               </ul>
             </div>
@@ -332,6 +336,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
                 </li>
                 <li onClick={() => setArea("Ventas")}>Ventas</li>
                 <li onClick={() => setArea("Gestión")}>Gestión</li>
+                <li onClick={() => setArea("Comunicacion Institucional")}>
+                  Comunicacion
+                </li>
               </ul>
             </div>
             {/* Renderiza los activos y genera un código QR para cada número de serie */}
@@ -469,7 +476,7 @@ const HomeQr = ({ computers, phone, monitor }) => {
                       />
                     </div>
                   ))
-                : area === "Comunicación Institucional"
+                : area === "Comunicacion Institucional"
                 ? teleComunicacion.map((item) => (
                     <div className="qrItem" key={item.id}>
                       <div className="inventario">
