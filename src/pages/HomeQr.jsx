@@ -45,6 +45,9 @@ const HomeQr = ({ computers, phone, monitor }) => {
 
   //filtros telefonos
 
+  const teleComunicacion = phone.filter(
+    (compu) => compu.groups_id === "Comunicación Institucional"
+  );
   const telefVentas = phone.filter((compu) => compu.groups_id === "Ventas");
   const telefMkt = phone.filter((compu) => compu.groups_id === "Marketing");
   const telefGestion = phone.filter((compu) => compu.groups_id === "Gestión");
@@ -162,6 +165,14 @@ const HomeQr = ({ computers, phone, monitor }) => {
                 <li
                   className={area === "Gestión" ? "selected" : null}
                   onClick={() => setArea("Gestión")}
+                >
+                  Gestión
+                </li>
+                <li
+                  className={
+                    area === "Comunicación Institucional" ? "selected" : null
+                  }
+                  onClick={() => setArea("Comunicación Institucional")}
                 >
                   Gestión
                 </li>
@@ -441,6 +452,25 @@ const HomeQr = ({ computers, phone, monitor }) => {
                   ))
                 : area === "Gestión"
                 ? telefGestion.map((item) => (
+                    <div className="qrItem" key={item.id}>
+                      <div className="inventario">
+                        <strong>Inventario:</strong> <p>{item.otherserial}</p>
+                      </div>
+                      <div>
+                        <strong>Número de Serie:</strong> <p>{item.serial}</p>
+                      </div>
+                      <div className="usuario">
+                        <strong>Usuario:</strong> <p>{item.users_id}</p>
+                      </div>
+
+                      {/* Genera el código QR para el número de serie */}
+                      <QRCode
+                        value={`https://qragus.netlify.app/info/${item.serial}`}
+                      />
+                    </div>
+                  ))
+                : area === "Comunicación Institucional"
+                ? teleComunicacion.map((item) => (
                     <div className="qrItem" key={item.id}>
                       <div className="inventario">
                         <strong>Inventario:</strong> <p>{item.otherserial}</p>
