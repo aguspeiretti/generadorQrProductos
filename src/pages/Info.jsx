@@ -55,7 +55,7 @@ const Info = () => {
     try {
       // Solicitar activos utilizando el token de sesión
       const computerResponse = await fetch(
-        `https://mundojob.with23.glpi-network.cloud/apirest.php/Computer/?range=0-100&expand_dropdowns=true`,
+        `https://mundojob.with23.glpi-network.cloud/apirest.php/Computer/?expand_dropdowns=true`,
         {
           headers: {
             "Content-Type": "application/json",
@@ -77,7 +77,7 @@ const Info = () => {
     try {
       // Solicitar activos utilizando el token de sesión
       const computerResponse = await fetch(
-        "https://mundojob.with23.glpi-network.cloud/apirest.php/Phone/?range=0-100&expand_dropdowns=true",
+        "https://mundojob.with23.glpi-network.cloud/apirest.php/Phone/?&expand_dropdowns=true",
         {
           headers: {
             "Content-Type": "application/json",
@@ -99,7 +99,7 @@ const Info = () => {
     try {
       // Solicitar activos utilizando el token de sesión
       const computerResponse = await fetch(
-        "https://mundojob.with23.glpi-network.cloud/apirest.php/Monitor/?range=0-100&expand_dropdowns=true",
+        "https://mundojob.with23.glpi-network.cloud/apirest.php/Monitor/?expand_dropdowns=true",
         {
           headers: {
             "Content-Type": "application/json",
